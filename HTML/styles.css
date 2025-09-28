@@ -241,3 +241,75 @@
 body {
   background-color: green;
 }
+
+
+.text {
+    margin-top: 100px;
+    background-color:rgb(255, 0, 34); 
+    
+}
+
+.text h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Copperplate Gothic;
+    line-height: 1.2em;
+}
+
+.text h2{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: monospace;
+    padding-bottom: 20px;
+}
+
+
+/*--------- revolver page -----------*/
+.GunS{
+    height: 60vh;
+    width: auto;
+    background:url(../imgahenes/revolver.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color:blanchedalmond;
+    font-family: impact;
+}
+
+
+.GunS h1{
+    text-align: left;
+    padding-top: 300px;
+    font-size: 80px;
+    padding-left: 10px;    
+}
+
+
+/*--------- images and texts -----------*/
+
+.revolvers{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: aliceblue;
+    font-family: Copperplate Gothic;
+}
+
+.revolvers img{
+    height: 350px;
+    width: 540px;
+}
+
+.revolvers h1{
+background-color: brown;
+border-style: outset;
+
+}
