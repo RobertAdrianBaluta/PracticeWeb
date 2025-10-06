@@ -239,7 +239,7 @@
 }
 
 body {
-  background-color: green;
+  background-color: rgb(68, 128, 0);
 }
 
 
@@ -266,50 +266,21 @@ body {
 }
 
 
-/*--------- revolver page -----------*/
-.GunS{
-    height: 60vh;
-    width: auto;
-    background:url(../imgahenes/revolver.png);
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color:blanchedalmond;
-    font-family: impact;
+/*--------- Hero section -----------*/
+
+.main {
+  background-color: rgb(61, 50, 50);
 }
 
-
-.GunS h1{
-    text-align: left;
-    padding-top: 300px;
-    font-size: 80px;
-    padding-left: 10px;    
-}
-
-
-/*--------- images and texts -----------*/
-
-.revolvers{
-    /* display: flex; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    text-align: center;
-    color: aliceblue;
-    font-family: Copperplate Gothic;
-}
-
-.revolvers img{
-    height: 350px;
-    width: 540px;
-}
-
-.revolvers h1{
-background-color: brown;
-border-style: outset;
-
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: #968383;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
 }
