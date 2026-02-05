@@ -89,8 +89,6 @@
   width: 100%;
 }
 
-
-/* Button Styles */
 .button {
   display: flex;
   justify-content: center;
@@ -113,8 +111,8 @@
 .navbar__links:hover {
   /* Hover effect for navbar links */
   background: none;
-  -webkit-background-clip: initial; /* Reset background clip */
-  -webkit-text-fill-color: rgb(51, 255, 0); /* Change text color on hover */
+  -webkit-background-clip: initial; 
+  -webkit-text-fill-color: rgb(51, 255, 0); 
   -moz-background-clip: initial;
   -moz-text-fill-color: aqua;
   size: 200%;
@@ -241,33 +239,6 @@
   }
 }
 
-body {
-  background-color: rgb(68, 128, 0);
-}
-
-
-.text {
-    margin-top: 100px;
-    background-color:rgb(255, 0, 34); 
-    
-}
-
-.text h1{
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: Copperplate Gothic;
-    line-height: 1.2em;
-}
-
-.text h2{
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: monospace;
-    padding-bottom: 20px;
-}
-
 
 /*--------- Hero section -----------*/
 
@@ -288,7 +259,7 @@ body {
   height: 90vh;
   background-color: #000;
   width: 100%;
-  max-width: 1400px;
+  max-width: 9999px;
   padding: 0 2rem;
 }
 
@@ -304,9 +275,10 @@ body {
 }
 
 .main__content h1 {
+  font-family: Arial, sans-serif;
   font-size: 3rem;
   font-weight: 700;
-   background-image: linear-gradient(to top, #31ff08 20%, #ffffff 80%);
+   background-image: linear-gradient(to top, #8ac77e 100%, #ffffff 80%);
   background-size: 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -322,17 +294,6 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-}
-
-.main__content p {
-  -webkit-text-fill-color: initial;
-   font-family: 'Courier New', monospace;
-  color: #ffffff;
-  background: none;
-  background-clip: initial;
-  margin: 1.5rem 0;
-  font-size: 2rem;
-  font-weight: 700;
 }
 
 
@@ -358,12 +319,10 @@ body {
 
 /* project boxes */
 
-/* Reset default button styles  */
-
 .projects {
  padding-top: 150px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 01fr);
   justify-items: center;
 }
 
@@ -373,7 +332,7 @@ body {
   height: 350px;
   cursor: pointer;
  margin-bottom: 100px;
-  text-decoration: none; /* remove link underline */
+  text-decoration: none; 
 }
 
 .project-box img {
@@ -385,19 +344,24 @@ body {
 
 /* Hover effect */
 .project-box:hover img {
-  filter: hue-rotate(230deg);
+  filter: invert(100%);
+}
+
+.project-box:hover {
+  color: black;            
 }
 
 .project-box h1,
 .project-box p {
   position: absolute;
   left: 50%;
+  background-color: #000 !important;
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
   text-align: center;
   color: white;
   font-family: Arial, sans-serif;
-  pointer-events: none; /* text doesn't block click */
+  pointer-events: none;
 }
 
 .project-box h1 {
@@ -455,5 +419,229 @@ body {
     font-size: 1.5rem;
     margin-bottom: 50px ;
   }
+  
+}
 
+/*---------------------------------------------------------------------Projects Page Styles----------------------------------------------------------*/
+
+body {
+  background-color: rgb(68, 128, 0);
+}
+
+
+.text {
+    background-color:rgb(109, 199, 26);
+    padding: 50px; 
+    
+}
+
+.text h1{
+  
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    line-height: 1.2em;
+}
+
+.text h2{
+  
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: monospace;
+    padding-bottom: 20px;
+}
+
+/* Data and Algorithm styles */
+
+/* Main container */
+
+.container {
+  display: flex;
+  padding: 50px;
+}
+
+.left {
+    font-family: 'Courier New', monospace;
+    background-color:rgba(32, 5, 75, 0.226);
+    max-width: 600px;
+    
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.226);
+
+}
+
+.left h2 {
+  font-size: 50px;
+    padding: 20px;
+   
+    font-family: 'Courier New', monospace;
+    color:rgb(0, 0, 0)  
+  
+}
+
+.left p {
+  padding-left: 20px;
+   padding-bottom: 20px;
+    font-family: 'Courier New', monospace;
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.right {
+  text-align: left;
+  padding-top : 20px;
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.226);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.226);
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  white-space: pre-wrap;
+}
+
+
+.Dataintroduction {
+  padding-left: 120px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  max-height: fit-content;
+}
+
+.Dataintroduction h1 {
+  font-size: 50px;
+  padding-left: 70px;
+  font-family: 'Courier New', monospace;
+  
+  border-style: dashed;
+  background-color: rgba(0, 0, 0, 0.226);
+  color: #0f0;
+}
+
+.Dataintroduction p {
+  font-size: 20px;
+  padding: 10px 20px 20px 70px;
+  font-family: 'Courier New', monospace;
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.226);
+}
+
+
+/* Lists */
+.algorithms-container {
+  display: flex;
+  padding: 50px;
+  background-color: rgb(109, 199, 26);
+}
+.Aleft {
+  width: 40%;
+  max-width: 500px;
+  flex-shrink: 0;
+    font-family: 'Courier New', monospace;
+    background-color:rgba(32, 5, 75, 0.226);
+    max-width: 600px;
+    
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.226);
+
+}
+.Aright {
+  width: 100%;          /* or 700px, 800px, etc */
+  max-width: 1200px;   /* prevents massive stretching */
+  min-width: 0;      /* VERY IMPORTANT for flexbox */
+  display: grid; 
+   grid-template-columns: repeat(1, 01fr);
+  border-style: dashed;
+  border-color: rgba(0, 0, 0, 0.226);
+  background-color: rgba(0, 0, 0, 0.226);
+  color: #0f0;
+  white-space: pre-wrap;
+}
+
+.List {
+  background-color: rgba(0, 0, 0, 0.226);
+  margin-bottom: 50px;
+  padding-left: 150px;
+  padding-bottom: 20px;
+}
+.Dataintroduction h2,
+.Dataintroduction h3 {
+  font-family: 'Courier New', monospace;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.Dataintroduction ul {
+  font-family: 'Courier New', monospace;
+  color: rgb(0, 0, 0);
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.Dataintroduction li {
+  font-family: 'Courier New', monospace;
+color: black;
+}
+
+
+.CSharpCode {
+  width: 100%;
+  max-width: 100%;
+  background: #185306;   /* use dark instead of red once debugging is done */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
+}
+.code-header {
+   font-family: "Fira Code", Consolas, "Courier New", monospace !important;
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00d15e;
+  padding: 8px 12px;
+  height: 40px;
+  font-size: 0.85rem;
+}
+
+.toggle-btn {
+  background: none;
+  border: 1px solid #180000;
+  color: #fff;
+  padding: 2px 30px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.toggle-btn:hover {
+  background: #444;
+}
+
+.code-block {
+  margin: 0;
+  padding: 12px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 500px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* collapsed state */
+.code-block.collapsed {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.CSharpCode pre,
+.CSharpCode code,
+.CSharpCode code *,
+.CSharpCode .token {
+  font-family: "Fira Code", Consolas, "Courier New", monospace !important;
+  font-style: normal !important;
+  font-weight: 300;
 }
